@@ -33,7 +33,7 @@ const Detail = ({ exerciseDetail }) => {
         <Typography variant="h3" textTransform="capitalize" textAlign="center">
           {name}
         </Typography>
-        <Typography variant="h5">
+        <Typography variant="h5" textTransform="capitalize">
           Exercises keep you strong. {name} is one of the best exercises to
           target your {target}. it will help you improve your mood and gain
           energy.
