@@ -4,7 +4,6 @@ import { Stack, Typography } from "@mui/material";
 import Icon from "../assets/icons/gym.png";
 
 const BodyPart = ({ item, setBodyPart, bodyPart }) => {
-  console.log(item.toString())
   
   return (
     <Stack
@@ -20,6 +19,10 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         height: "280px",
         cursor: "pointer",
         gap: "47px",
+      }}
+      onClick={() => {
+        setBodyPart(item)
+        window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
       }}
     >
       <img
