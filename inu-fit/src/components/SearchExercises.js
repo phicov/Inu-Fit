@@ -26,7 +26,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions)
 
       setBodyParts(['all', ...bodyPartsData])
-      console.log(bodyPartsData)
     }
 
     fetchExercisesData()
@@ -94,7 +93,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         </ThemeProvider>
       </Box>
       <Box sx={{ position: 'relative', width: '100%', p: '20px'}}>
-        <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
+        <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyParts/>
       </Box>
     </Stack>
   );
