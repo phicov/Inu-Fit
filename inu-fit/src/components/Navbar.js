@@ -35,7 +35,7 @@ const Navbar = () => {
             fontFamily: "sans-serif",
             textDecoration: "none",
             color: "#3A1212",
-            borderBottom: "3px solid #fba328",
+            borderBottom: "2px solid #fba328",
           }}
         >
           Home
@@ -46,6 +46,8 @@ const Navbar = () => {
             fontFamily: "sans-serif",
             textDecoration: "none",
             color: "#3a1212",
+            borderBottom: "2px solid #fba328",
+            
           }}
         >
           Exercises
